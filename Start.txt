@@ -1,0 +1,46 @@
+Mounting /home/guest...
+Welcome to foobar version 1-335-gea1c3e3-beta (2021-03-23T14:21:25.095437)
+
+Google has a code challenge ready for you.
+Success! You've managed to infiltrate Commander Lambda's evil organization, and finally earned yourself an entry-level position as a Minion on their space station. From here, you just might be able to subvert Commander Lambda's plans to use the LAMBCHOP doomsday device to destroy Bunny Planet. Problem is, Minions are the lowest of the low in the Lambda hierarchy. Better buck up and get working, or you'll never make it to the top...
+
+Warning! Your invitation may expire if you leave this page. Click here to sign in so you can save your progress and resume later.
+
+For a list of commands type help. To get started with your first challenge type request.
+
+Mounting /home/retagaine...
+Logged in as retagaine.
+Mounting /home/retagaine...
+Logged in as retagaine. Welcome Back!
+foobar:~/ retagaine$ help
+Use the following shell commands:
+
+cd	change directory [dir_name]
+cat	print file [file_name]
+deleteme	delete all of your data associated with foobar
+edit	open file in editor [file_name]
+feedback	provide feedback on foobar
+less	print a file a page at a time [file_name]
+ls	list directory contents [dir_name]
+request	request new challenge
+status	print progress
+submit	submit final solution file for assessment [file_name]
+verify	runs tests on solution file [file_name]
+
+Keyboard help:
+
+Ctrl + S	save the open file [when editor is focused]
+Ctrl + E	close the editor [when editor is focused]
+
+Toggle between the editor and terminal using ESC followed by TAB, then activate with ENTER.
+
+foobar:~/ retagaine$ ls
+journal.txt
+start_here.txt
+foobar:~/ retagaine$ journal.txt
+Many smoke but foo men chew!
+journal.txt: command not found. Type help for a list of commands
+foobar:~/ retagaine$ cat journal.txt
+Success! You've managed to infiltrate Commander Lambda's evil organization, and finally earned yourself an entry-level position as a Minion on their space station. From here, you just might be able to subvert Commander Lambda's plans to use the LAMBCHOP doomsday device to destroy Bunny Planet. Problem is, Minions are the lowest of the low in the Lambda hierarchy. Better buck up and get working, or you'll never make it to the top...
+foobar:~/ retagaine$ cat start_here.txt
+Type request to request a challenge. Type help for a list of commands.
