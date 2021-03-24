@@ -9,7 +9,17 @@ public class Translator
     }
     public String TranslateEnglishToBraille(String plaintext)
     {
-        String translation = "";
-        return translation;
+        StringBuilder translation = new StringBuilder();
+        for(int i = 0; i<plaintext.length();i++)
+        {
+            if(Character.isUpperCase(plaintext.charAt(i)))
+            {
+                translation.append(myAlphabet.upperCaseBraille);
+                translation.append(myAlphabet.englishToBrailleDictionary.get(plaintext.substring(i, i + 1).toLowerCase()));
+            }
+            else
+                translation.append(myAlphabet.englishToBrailleDictionary.get(plaintext.substring(i, i + 1)));
+        }
+        return translation.toString();
     }
 }
