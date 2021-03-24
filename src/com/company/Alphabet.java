@@ -16,12 +16,13 @@ public class Alphabet
     {
         String pText = plain;
         String bText = binary;
-        while (plain.length() > 0 && binary.length() * SIZE_OF_LETTER == plain.length() && binary.length() % 6 == 0)
+        while (pText.length() > 0 && bText.length() > 0 && bText.length() % 6 == 0)
         {
             if (Character.isUpperCase(pText.charAt(0)))
             {
                 String binaryLetter = bText.substring(0, 6);
                 englishToBrailleDictionary.put(" ", binaryLetter);
+                pText = pText.toLowerCase();
                 bText = bText.substring(6);
             }
             else
